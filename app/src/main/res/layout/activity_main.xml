@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView android:text="My Nanodegree Apps" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:id="@+id/appsHeader" />
+
+    <Button style="@style/ButtonStyle"
+        android:text="Spotify Streamer"
+        android:id="@+id/spotifyButton"
+        android:layout_below="@+id/appsHeader"
+        android:layout_centerHorizontal="true"
+        android:onClick="spotifyClick"/>
+
+    <Button style="@style/ButtonStyle"
+        android:text="Scores App"
+        android:id="@+id/scoresButton"
+        android:layout_below="@id/spotifyButton"
+        android:onClick="scoreClick"
+        />
+    <Button style="@style/ButtonStyle"
+        android:text="Library App"
+        android:id="@+id/libraryButton"
+        android:layout_below="@id/scoresButton"
+        android:onClick="libraryClick"/>
+
+    <Button style="@style/ButtonStyle"
+        android:text="Build it Bigger"
+        android:id="@+id/biggerButton"
+        android:layout_below="@id/libraryButton"
+        android:onClick="biggerClick"
+        />
+
+    <Button style="@style/ButtonStyle"
+        android:text="Xyz Reader"
+        android:id="@+id/xyzButton"
+        android:layout_below="@id/biggerButton"
+        android:onClick="xyzClick"
+        />
+    <Button style="@style/CapstoneButtonStyle"
+        android:text="Capstone: My Own App"
+        android:id="@+id/capstoneButton"
+        android:layout_below="@id/xyzButton"
+        android:onClick="capstoneClick"
+        />
+
+
+
+</RelativeLayout>
